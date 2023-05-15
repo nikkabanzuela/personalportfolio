@@ -1,0 +1,30 @@
+@mixin centerALL
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin centerSpaceBetween
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin btn($bg) {
+  padding: 0.5rem 2rem;
+  color: $clr-white;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-block;
+  border-radius: 10px;
+  background: $bg;
+  &:hover {
+    background: darken($bg, 10);
+  }
+}
+@mixin grid($cols: 1, $gap: 1rem) {
+  display: grid;
+  grid-template-columns: repeat($cols, 1fr);
+  grid-gap: $gap;
+}

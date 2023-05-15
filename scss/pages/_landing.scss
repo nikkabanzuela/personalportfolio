@@ -1,0 +1,281 @@
+.bannerFull
+{
+    background:  linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),url('/img/background.png') repeat fixed 100%;
+      &__content {
+        p{
+            font-size: 1rem;
+        }
+        h1 
+        {
+            font-size: 5rem;
+            line-height: 1;
+            span{
+                color: $clr-teal;
+            }
+        }
+      
+        a{
+            @include btn($clr-teal);
+        }
+    }
+
+}
+.aboutme{
+    background-color: $clr-black;
+    h1{
+        color: $clr-white;
+        font-size: 3rem;
+    }
+    img{
+        width: 350px;
+        height: 455px;
+        object-fit: cover;
+    }
+    p{
+        color: $clr-white;
+        font-size: 1.3rem;
+    } 
+    &_line{
+        border-top: 4px solid $clr-blue;
+        border-right:4px solid $clr-blue;
+        border-bottom: 4px solid $clr-blue;
+        border-left: 4px solid $clr-blue;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    &_linetwo{
+        border-top: 4px solid $clr-teal;
+        border-right:4px solid $clr-teal;
+        border-bottom: 4px solid $clr-teal;
+        border-left: 4px solid $clr-teal;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+}
+
+.myexperience{
+    background-color: $clr-black;
+    h1{
+        color: $clr-white;
+        font-size: 3rem;
+    }
+    p{
+        color: $clr-white;
+    }
+    &__wrapper {
+        @include grid(2,4rem);
+       margin-left: 10rem;
+      }
+      &__type   {  border-radius: 1rem;
+        padding-top: 2rem;
+        ul{
+         
+            li{
+                margin-bottom: 2rem;
+                font-size: 1.2rem;
+                font-weight: 500;
+                i{
+                    margin: 1rem;
+                }
+            }
+      }
+
+}
+}
+.web_application{
+    background-color: $clr-black;
+    padding: 3rem;
+    h1{
+        color: $clr-white;
+        font-size: 3rem;
+    }
+    &__wrapper {
+        @include grid(2,2rem);
+      }
+      &__type{
+        background-color: $clr-white;
+        height: 350px;
+        width: 480px;
+        border-radius: 1rem;
+        padding-bottom: 2rem;
+        img{
+            height: 10rem;
+            width: 30rem;
+        }
+        a{
+            @include btn($clr-teal);
+        }
+      }
+
+}
+.bg--transparent
+{
+    background-color: transparent !important;
+    color: $clr-black !important;
+    border: 1px solid $clr-teal !important;
+    padding: 0.5rem 2rem;
+    i{
+        color: $clr-teal;
+    }
+    &:hover 
+    {
+        background-color: $clr-teal !important;
+        color: $clr-black !important;
+    }
+}
+.slider{
+    background-color: $clr-black;
+    color: $clr-white;
+    h1{
+        color: $clr-white;
+        font-size: 3rem;
+    }
+    &_type{
+        p{
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+        h3{
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+    }
+  
+    &_types{
+        img{
+            margin-top: 4rem;
+            margin-left: 4rem;
+        }
+        ul{ 
+            margin-left: 4rem;
+            color: yellow;
+           li{
+           padding-top: 6rem;
+          
+           }
+        
+        }
+        
+
+    }
+   .mySlider{
+
+  
+    background:  linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),url('/img/background_slider1.png') repeat fixed 100%;
+   }
+}
+.services{
+    background-color: $clr-black;
+    padding-top: 6rem;
+    h1{
+        color: $clr-white;
+        font-size: 3rem;
+    }
+    &_wrapper{
+        img{
+            padding-top: 3rem;
+            width: 1200px;
+            height: 700px;
+        }
+    }
+    &_content{
+        background-color: $clr-white;
+       a{
+         margin-left: 25rem;
+       }
+    }
+}
+.contact{
+    padding: 6rem;
+    background-color: $clr-black;
+    color: $clr-black;
+    h1{
+        color: $clr-white;
+        font-size: 3rem;
+        margin-left: 4rem;
+    } 
+    &_content{
+        border-top: 1px solid white;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: 1px solid white;
+        margin-left: 4rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+   form{
+    label{
+        font-size: 1.3rem;
+
+    }
+    color: $clr-white;
+   }
+}
+.footer{
+    background-color: $clr-black;
+    &_wrapper{
+        ul{
+            li{
+                margin: 1rem;
+            }
+            i{
+                font-size: 1.5rem;
+                color: $clr-white;
+
+            }
+        }
+        p{
+            margin-bottom: 3rem;
+            margin-left: 40rem;
+            color: $clr-white;
+        }
+    }
+}
+.tns-nav button
+{
+    height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:white;
+    border: none;
+    margin: 0 4px;
+
+}
+.tns-nav .tns-nav-active
+{
+    background-color:$clr-teal;
+}
+.tns-controls
+
+{
+ position: relative;
+}
+.tns-controls button:first-child
+{
+    position: absolute;
+    top: 10rem;
+    background: none;
+    border: none;
+    z-index: 1;
+    font-size: 2rem;
+
+}
+.tns-controls button:last-child
+{
+    position: absolute;
+    right: 0;
+    top: 10rem;
+    background: none;
+    border: none;
+    z-index: 1;
+    font-size: 2rem;
+
+}
+
