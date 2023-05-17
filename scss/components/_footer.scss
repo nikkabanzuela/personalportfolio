@@ -1,0 +1,32 @@
+.footer {
+  &__wrapper {
+    gap: 5rem;
+    ul li {
+      &:first-child {
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+    }
+    .theLinks {
+      gap: 2rem;
+    }
+    @include mediaQuery($break-md) {
+      display: block !important;
+    }
+  }
+
+  &__btn a {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem 0 !important;
+    @include mediaQuery($break-md) {
+      padding: 1rem 0 !important;
+    }
+  }
+  &__wrapper {
+    @include mediaQuery($break-md) {
+      display: block !important;
+    }
+  }
+}

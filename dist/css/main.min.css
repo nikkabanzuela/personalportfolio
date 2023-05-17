@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -45,6 +46,107 @@ a {
   padding: 2rem;
 }
 
+nav {
+  z-index: 1;
+}
+nav.open ul {
+  right: -50%;
+  transition: 0.5s ease;
+  padding: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 1.1rem;
+}
+
+nav ul {
+  gap: 2rem;
+}
+@media screen and (max-width: 870px) {
+  nav ul {
+    background-color: rgba(128, 128, 128, 0.463);
+    display: block !important;
+    position: absolute;
+    right: calc(-100% - 3rem);
+    top: 6.2rem;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s ease;
+  }
+  nav ul li {
+    border-bottom: 1px solid white;
+    margin: 1rem 0;
+  }
+}
+
+.toggle__menu {
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+.toggle__menu span {
+  transition: 0.5s ease;
+  background-color: #1F7A8C;
+  height: 0.2rem;
+  width: 3rem;
+  display: block;
+  margin-top: 0.3rem;
+  border-radius: 2rem;
+}
+@media screen and (max-width: 870px) {
+  .toggle__menu {
+    display: block;
+  }
+}
+
+.toggle__menu.open span:nth-child(1) {
+  transition: 0.5s ease;
+  transform: translate(-2px, 7.3px) rotate(45deg);
+}
+
+.toggle__menu.open span:nth-child(2) {
+  opacity: 0;
+  transition: 0s;
+}
+
+.toggle__menu.open span:nth-child(3) {
+  transition: 0.5s ease;
+  transform: translate(-2px, -9px) rotate(-45deg);
+}
+
+.footer__wrapper {
+  gap: 5rem;
+}
+.footer__wrapper ul li:first-child {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.footer__wrapper .theLinks {
+  gap: 2rem;
+}
+@media screen and (max-width: 870px) {
+  .footer__wrapper {
+    display: block !important;
+  }
+}
+.footer__btn a {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 1rem 0 !important;
+}
+@media screen and (max-width: 870px) {
+  .footer__btn a {
+    padding: 1rem 0 !important;
+  }
+}
+@media screen and (max-width: 870px) {
+  .footer__wrapper {
+    display: block !important;
+  }
+}
+
 .bannerFull {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/background.png") repeat fixed 100%;
 }
@@ -88,6 +190,11 @@ a {
   color: white;
   font-size: 1.3rem;
 }
+@media screen and (max-width: 870px) {
+  .aboutme p {
+    display: block !important;
+  }
+}
 .aboutme_line {
   border-top: 4px solid #577399;
   border-right: 4px solid #577399;
@@ -119,7 +226,13 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem;
-  margin-left: 10rem;
+}
+@media screen and (max-width: 48rem) {
+  .myexperience__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
 }
 .myexperience__type {
   border-radius: 1rem;
@@ -146,6 +259,13 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+}
+@media screen and (max-width: 48rem) {
+  .web_application__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
 }
 .web_application__type {
   background-color: white;
@@ -189,6 +309,11 @@ a {
   background-color: #232020;
   color: white;
 }
+@media screen and (max-width: 870px) {
+  .slider {
+    display: block !important;
+  }
+}
 .slider h1 {
   color: white;
   font-size: 3rem;
@@ -223,6 +348,25 @@ a {
 .services h1 {
   color: white;
   font-size: 3rem;
+}
+.services_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+@media screen and (max-width: 48rem) {
+  .services_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .services_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
 }
 .services_wrapper img {
   padding-top: 3rem;
